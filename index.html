@@ -300,45 +300,81 @@ https://www.tooplate.com/view/2115-marvel
     </section>
 
     <!-- CONTACT 로그인/회원가입 -->
+
     <section class="contact py-5" id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">회원 가입하고 퀴즈 풀고 선물 받아가세요!</h2>
 
-              <form action="" method="get">
-                <div class="row">
-                  <!--회원가입 작성 부분-->
-                  <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
-                  </div>
 
-                  <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
-                  </div>
+  <div class="col-lg-6 col-12">
+      <div class="contact-form">
+        <h2 class="mb-4">Log In</h2>
 
-                  <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-                  </div>
+        <form action="" method="POST">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <input type="text" class="form-control" name="userID" placeholder="ID">
+            </div>
+            <br>
 
-                  <div class="col-12">
-                    <input name="office name" class="form-control" name="office name" placeholder="office name" id="officeName"> 
-                  </div>
+            <div class="col-lg-6 col-12">
+              <input type="text" class="form-control" name="userPassword" placeholder="password"><br>
+            </div>
 
-                  <!--회원가입부분 끝-->
+            <!--div class="col-12">
+              <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+            </div-->
 
-                  <div class="ml-lg-auto col-lg-5 col-12">
-                    <input type="submit" class="form-control submit-btn" value="Send Button">
-                  </div>
-                </div>
-              </form>
+            <div class="ml-lg-auto col-lg-5 col-12">
+              <input type="submit" class="form-control submit-btn" value="LogIn">
             </div>
           </div>
-
-        </div>
+        </form>
       </div>
-    </section>
+    </div>
+
+
+    
+  <div class="col-lg-6 col-12">
+      <div class="contact-form">
+        <h2 class="mb-4">Register</h2>
+
+        <form action="" method="POST">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <input type="text" class="form-control" name="userID" placeholder="ID"><br>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <input type="text" class="form-control" name="userPassword" placeholder="Password">
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <input type="text" class="form-control" name="userEmail" placeholder="E-mail">
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <h3>기관 고르기</h3>
+                <select name=institution SIZE=1 class="form-control">
+                    <option value=1>1번 보기</option>
+                    <option value=2>2번 보기</option>
+                    <option value=3>3번 보기</option>
+                    <option value=4>4번 보기</option>
+                </select>
+              
+            </div>
+
+            <div class="ml-lg-auto col-lg-5 col-12">
+              <input type="submit" class="form-control submit-btn" value="register">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
 
     <!-- FOOTER -->
      <footer class="footer py-5">
