@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,7 +80,7 @@ https://www.tooplate.com/view/2115-marvel
     <div class="contact-form">
       <br><h2 class="mb-4">Log In</h2>
 
-      <form action="" method="POST">
+      <form action="loginAction.php" method="POST">
         <div class="row">
           <div class="col-lg-6 col-12">
             아이디: <input type="text" class="form-control" name="userID" placeholder="ID">
@@ -90,17 +90,14 @@ https://www.tooplate.com/view/2115-marvel
           <div class="col-lg-6 col-12">
             패스워드: <input type="text" class="form-control" name="userPassword" placeholder="password"><br>
           </div>
-
-          <!--div class="col-12">
-            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-          </div-->
-
+          
           <div class="ml-lg-auto col-lg-5 col-12">
-            <input type="submit" class="form-control submit-btn" value="LogIn">
-
+            <input type="submit" class="form-control submit-btn" 
+                  name="login_btn" value="LogIn">
           </div>
         </div>
       </form>
+      
     </div>
   </div>
 
@@ -110,7 +107,7 @@ https://www.tooplate.com/view/2115-marvel
     <div class="contact-form">
       <br><h2 class="mb-4">Register</h2>
 
-      <form action="" method="POST">
+      <form action="register.php" method="POST">
         <div class="row">
           <div class="col-lg-6 col-12">
             아이디: <input type="text" class="form-control" name="userID" placeholder="ID"><br>
@@ -131,7 +128,8 @@ https://www.tooplate.com/view/2115-marvel
           </div>
 
           <div class="ml-lg-auto col-lg-5 col-12">
-            <input type="submit" class="form-control submit-btn" value="register">
+            <input type="submit" class="form-control submit-btn" 
+                   name="register_btn" value="register">
           </div>
         </div>
       </form>
